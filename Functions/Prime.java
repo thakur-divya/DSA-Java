@@ -18,14 +18,17 @@ class Prime{
         return true;
     }
     public  void inRange(int n){
+
         int i;
-        for( i =1;i<=n;i++){
+
+        for( i =1; i<=n; i++){
+
             if(isPrime(i)){
+
                 System.out.println(i);
             }
         }
     }
-
 
     public static void main(String args[]){
         int n;
