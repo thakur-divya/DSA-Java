@@ -2,12 +2,15 @@ package Arrays;
 
 public class LargestArray {
     public static int getlargest(int numbers[]){
+        int index=0;
         int largest= Integer.MIN_VALUE;
         for(int i=0;i<numbers.length;i++){
             if(numbers[i]>largest){
                 largest=numbers[i];
+                index=i;
             }
         }
+        System.out.println("Largest found at index : " + index);
         return largest;
     }   
     public static void main(String[] args) {
