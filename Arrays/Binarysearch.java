@@ -1,5 +1,6 @@
 package Arrays;
 public class Binarysearch {
+    /*Time complexity of binary search is O(log n) */
     public static int binarysearch(int numbers[],int key){
         int start=0;
         int end=numbers.length+1;
