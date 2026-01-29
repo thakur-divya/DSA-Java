@@ -10,7 +10,7 @@ public class LargestArray {
                 index=i;
             }
         }
-        System.out.println("Largest found at index : " + index);
+        System.out.println("Largest found at index : " + (index + 1));
         return largest;
     }   
     public static void main(String[] args) {
