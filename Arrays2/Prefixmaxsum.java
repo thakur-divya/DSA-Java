@@ -1,5 +1,6 @@
 package Arrays2;
 
+//Time complexity is O(n2)
 public class Prefixmaxsum {
     public static void maxsum(int numbers[]){
         int cursum;
