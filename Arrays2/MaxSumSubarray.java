@@ -1,5 +1,7 @@
 package Arrays2;
-import java.util.*;
+
+//Time complexity is O(n3)
+
 public class MaxSumSubarray {
     public static void maxsum(int numbers[]){
         int cursum;
