@@ -1,5 +1,6 @@
 package Arrays2;
 
+//Kadanes algo Time complexity is O(n) and space complexity is O(1). Problem no 53 in leetcode
 public class MaxsumSubarrayKadanes {
     public static void maxsum(int number[]){
         int cursum =0;
