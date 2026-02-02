@@ -1,5 +1,5 @@
 package BasicSorting;
-
+//Time complexity is O(n2)
 public class Bubblesort {
     public static void bubble(int arr[]){
         for(int i=0; i<arr.length-1; i++){
