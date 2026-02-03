@@ -14,7 +14,7 @@ public class Bubblesort {
                 }
             }
             if(swap == 0){
-                System.out.println("No swapping needed already sorted");
+                System.out.println("No swapping needed already sorted");//Array already sorted
                 break;
             }
         }
