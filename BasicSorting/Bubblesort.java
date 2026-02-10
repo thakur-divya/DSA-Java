@@ -2,11 +2,13 @@ package BasicSorting;
 //Time complexity is O(n2)
 public class Bubblesort {
     public static void bubble(int arr[]){
+        
         for(int i=0; i<arr.length; i++){
             int swap=0;
             for(int j=0; j<arr.length-1-i ; j++){
                 if(arr[j]>arr[j+1]){
                     swap ++;
+
                     //swap
                     int temp = arr[j];
                     arr[j]=arr[j+1];
