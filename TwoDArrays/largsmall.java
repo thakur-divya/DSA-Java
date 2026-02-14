@@ -15,6 +15,18 @@ public class largsmall {
         }
         return max;
     }
+    public static int smallest(int matrix[][]){
+        int min = Integer.MAX_VALUE;
+        for(int i = 0;i< matrix.length ; i++){
+            for(int j=0; j<matrix[0].length ; j++){
+                if( matrix[i][j] < min ){
+                    min = matrix[i][j];
+                    
+                } 
+            }
+        }
+        return min;
+    }
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int matrix[][] = new int[3][3];
@@ -35,5 +47,6 @@ public class largsmall {
             System.out.println();
         }
         System.out.println("Largest element in matrix is " + largest(matrix));
+        System.out.println("Smallest element in matrix is " + smallest(matrix));
     }
 }
