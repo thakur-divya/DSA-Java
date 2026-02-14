@@ -2,6 +2,7 @@ package Arrays2;
 
 public class TrappedRainwater {
     public static int trappedrainwater(int height[]){
+        
         int sum = 0;
         //calculate left max array
         int leftmax[] = new int[height.length];
