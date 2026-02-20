@@ -3,16 +3,14 @@ import java.util.*;
 
 public class pallindrome {
     public static boolean check(String str){
-        String rev = "";
-        for(int i=str.length() - 1 ; i>=0; i--){
-            rev = rev + str.charAt(i); 
+      
+        for(int i=0; i<=str.length()/2; i++){
+            if(str.charAt(i) != (str.charAt(str.length()-i-1))){
+                return false;
+            }
+            
         }
-        if(str .equals (rev)){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return true;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
