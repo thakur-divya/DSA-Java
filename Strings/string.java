@@ -11,7 +11,7 @@ public class string {
 
         Scanner sc = new Scanner(System.in);
         String name;
-        name = sc.next();
+        name = sc.nextLine();
         System.out.println(name);
     }
 }
