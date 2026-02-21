@@ -1,5 +1,5 @@
 package Strings;
-
+//time complexity is O(x * n) where x is no of chars in largest string and n is no of strings
 public class largest {
     public static void main(String[] args) {
         String fruits[] = {"mango", "apple", "banana"};
