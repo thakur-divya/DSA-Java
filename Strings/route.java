@@ -1,6 +1,6 @@
 package Strings;
 public class route {
-    public static double calc(String str){
+    public static float calc(String str){
         int x=0,y =0;
         for(int i=0; i<str.length(); i++){
             if(str.charAt(i) == 'N'){
@@ -16,11 +16,11 @@ public class route {
                 x--;
             }
         }
-        return Math.sqrt((x*x) + (y*y));
+        return (float)Math.sqrt((x*x) + (y*y));
 
     }
     public static void main(String[] args) {
-        String str = "WNEENESENNN";
+        String str = "NS";
         System.err.println(calc(str));
     }
 }
