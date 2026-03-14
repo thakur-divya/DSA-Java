@@ -11,7 +11,7 @@ public class firstoccurence {
         return firstocc(arr, key, i-1);//i-1 for decrement in last occurence and i+1 for firstoccurence
     }
     public static void main(String[] args) {
-        int arr[]= {1,8,3,5,6,5,9};
+        int arr[]= {8,3,6,9,5,10,2,5,3};
         System.out.println(firstocc(arr, 5, arr.length-1));// 0 for first and arr.length-1 for last occurence
     }
 }
