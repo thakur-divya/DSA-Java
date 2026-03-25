@@ -1,5 +1,6 @@
 package DivideAndConquer;
-
+//Time comp is O(nlogn)
+//More faster and efficient but takes memory
 public class MergeSort {
     public static void printArr(int arr[]){
         for(int i=0;i < arr.length; i++){

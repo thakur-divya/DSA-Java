@@ -1,5 +1,7 @@
 package DivideAndConquer;
-
+//Avg case comp is O(nlogn)
+//worst case time comp is O(n2)
+//Space comp is O(1) In terms of memory or storage its efficient that merge sort but not as faster as merge sort
 public class QuickSort {
     public static void printArr(int arr[]){
         for(int i=0;i<arr.length;i++){
@@ -18,7 +20,7 @@ public class QuickSort {
     }
     public static int partition(int arr[],int si,int ei){
         int pivot = arr[ei];
-        int i = si-1; 
+        int i = si-1; //to make place for elements smaller than pivot
 
         for(int j=si;j<ei;j++){
             if(arr[j] <= pivot){
