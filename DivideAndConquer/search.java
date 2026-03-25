@@ -2,6 +2,7 @@ package DivideAndConquer;
 
 public class search {
     public static int searcha(int arr[],int tar,int si,int ei){
+        //Base Case
         if(si>ei){
             return -1;
         }

@@ -8,6 +8,7 @@ public class MergeSort {
         System.out.println();
     }
     public static void mergesort(int arr[],int si,int ei){
+        //Base Case
         if(si >= ei){
             return;
         }
