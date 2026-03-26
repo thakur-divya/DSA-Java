@@ -1,7 +1,8 @@
 package DivideAndConquer;
  //Optimized Bubble Sort 
  //Best case time comp can be O(n) and worst case is O(n2) if optimized using boolean swapped variable
-public class BubbleSort {
+//In simple bubble sort both worst and best case is O(n2)
+ public class BubbleSort {
     public static void printArr(int arr[]){
         for(int i=0;i<arr.length-1;i++){
             System.out.print(arr[i] + " ");
