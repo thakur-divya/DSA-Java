@@ -1,5 +1,5 @@
 package DivideAndConquer;
-
+//element is searched in sorted and roatated array
 public class search {
     public static int searcha(int arr[],int tar,int si,int ei){
         //Base Case
