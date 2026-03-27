@@ -1,4 +1,5 @@
 public class duplicate {
+    //Program to find duplicates of strings in an array using recursion
     public static void remove(String str,int idx,StringBuilder newStr, boolean map[]){
         if(idx == str.length()){
             System.out.println(newStr);
