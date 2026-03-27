@@ -1,5 +1,5 @@
 package Recursion;
-
+//Printing the factorial using recursion
 public class Factorail {
     public static int fact(int n){
         if(n == 0){
