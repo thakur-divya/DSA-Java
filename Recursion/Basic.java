@@ -1,5 +1,5 @@
 package Recursion;
-
+//Baisc Recursion concept
 public class Basic {
     public static void printDec(int n){
         if(n==1){
