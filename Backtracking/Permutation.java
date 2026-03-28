@@ -1,5 +1,5 @@
 package Backtracking;
-
+//time comp := O(n*n!)
 public class Permutation {
     public static void findpermutation(String str, String ans){
         if(str.length() == 0){
