@@ -50,8 +50,9 @@ public class Sudokuu {
             if(sudokuSolver(sudoku, nextRow, nextCol)){
             return true;
             }
+        
+        sudoku[row][col] = 0; //backtack only if failed
         }
-        sudoku[row][col] = 0;
     }
     return false;
     }
