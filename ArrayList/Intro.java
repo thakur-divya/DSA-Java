@@ -32,5 +32,16 @@ public class Intro {
         //Contains O(n)
         System.out.println(list.contains(1));
         System.out.println(list.contains(11));
+
+
+
+        //Size is not a property but a method to count the size of ArrayList
+        System.out.println(list.size());
+
+        //printing the ArrayList
+        for(int i=0;i < list.size();i++){
+            System.out.print(list.get(i));
+        }
+        System.err.println();
     }
 }
