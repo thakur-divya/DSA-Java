@@ -11,6 +11,7 @@ public class Max {
         list.add(0);
         list.add(8);
 
+        //O(n)
         int max = Integer.MIN_VALUE;
         for(int i=0;i < list.size();i++){
             /*if(list.get(i) > max){
