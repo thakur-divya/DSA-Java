@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Container {
     public static int storeWater(ArrayList<Integer> height){
-        //brute force
+        //This is a brute force approach
         int maxWater = 0;
 
         for(int i=0;i<height.size();i++){
