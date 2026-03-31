@@ -1,5 +1,7 @@
 package ArrayList;
 import java.util.*;
+
+//Studying Multidimensional Array 
 public class Multidim {
     public static void main(String[] args) {
         ArrayList<ArrayList<Integer>> mainlist = new ArrayList<>();
