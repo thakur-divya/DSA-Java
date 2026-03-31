@@ -1,5 +1,7 @@
 package ArrayList;
-import java.util.ArrayList;
+import java.util.ArrayList; 
+
+//Swapping two nos. in array list using third variable
 public class Swap {
     public static void swap(ArrayList<Integer> list,int idx1,int idx2){
         int temp = list.get(idx1);
