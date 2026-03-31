@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Container {
     public static int storeWater(ArrayList<Integer> height){
-        //This is a brute force approach
+        //This is a brute force approach O(n^2)
         int maxWater = 0;
 
         for(int i=0;i<height.size();i++){
@@ -16,9 +16,7 @@ public class Container {
 
                 int area = ht * width;
 
-                if(area > maxWater){
-                    maxWater = area;
-                }
+                maxWater = Math.max(maxWater,area);
             }
         }
         return maxWater;
