@@ -2,6 +2,7 @@ package ArrayList;
 
 import java.util.ArrayList;
 
+//Reversing the ArrayList elements using list.size and list.get
 public class Reverse {
     public static void main(String[] args) {
         
