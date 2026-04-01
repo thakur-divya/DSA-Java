@@ -16,7 +16,7 @@ public class Reverse {
 
         //Reverse O(n)
         for(int i=list.size()-1 ;i >=0;i--){
-            System.out.print(list.get(i) + " ");
+            System.out.print(list.get(i) + " "); //list.get() to fetch elements of particular index
         }
         System.out.println("");
         
