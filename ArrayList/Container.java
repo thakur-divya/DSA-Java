@@ -22,6 +22,7 @@ public class Container {
         return maxWater;
     }
     public static void main(String[] args) {
+        //Making height arraylist to add all the heights
         ArrayList<Integer> height = new ArrayList<>();
 
         height.add(1);
