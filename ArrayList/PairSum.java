@@ -11,6 +11,23 @@ public class PairSum {
         }
         return false;
     }
+        public static boolean pairsum2(ArrayList<Integer> list,int target){
+            int lp = 0;
+            int rp = list.size()-1;
+
+            while(lp < rp){
+            if(list.get(lp)+list.get(rp) == target){
+                return true;
+            }
+            else if(list.get(lp)+list.get(rp) < target){
+                lp++;
+            }
+            else{
+                rp--;
+            }
+        }
+        return false;
+        }
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
@@ -22,5 +39,6 @@ public class PairSum {
         
         int target = 5;
         System.out.println(pairsum1(list, target));
-    }
-}
+        System.out.println(pairsum2(list, target));
+}}
+
