@@ -2,6 +2,8 @@ package ArrayList;
 
 import java.util.ArrayList;
 public class PairSum2 {
+    /*Find the pair sum of target element inside a roatated and sorted ArrayList */
+    
     public static boolean Sum(ArrayList<Integer> list, int target){
     
         int n = list.size();
@@ -9,7 +11,7 @@ public class PairSum2 {
 
         for(int i=0;i<n;i++){
             if(list.get(i) > list.get(i+1)){
-                bp = i;
+                bp = i; //This is my breaking point
                 break;
             }
         }
@@ -24,11 +26,11 @@ public class PairSum2 {
             }
             //case 2
             if(list.get(lp)+list.get(rp) < target){
-                lp = (lp+1)%n;
+                lp = (lp+1)%n; //remember
             }
             //case 3
             else{
-                rp = (n+rp-1)%n;
+                rp = (n+rp-1)%n; //remember
             }
         }
         return false;
@@ -36,6 +38,8 @@ public class PairSum2 {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         //Note that elements are Sorted and Rotated
+
+        //11 15 6 7 9 10
         list.add(11);
         list.add(15);
         list.add(6);
