@@ -20,12 +20,15 @@ public class PairSum {
             int rp = list.size()-1;
 
             while(lp < rp){
+            //case 1
             if(list.get(lp)+list.get(rp) == target){
                 return true;
             }
+            //case 2
             else if(list.get(lp)+list.get(rp) < target){
                 lp++;
             }
+            //case 3
             else{
                 rp--;
             }
@@ -34,6 +37,7 @@ public class PairSum {
         }
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
+        //Note that elements are Sorted
         list.add(1);
         list.add(2);
         list.add(3);
