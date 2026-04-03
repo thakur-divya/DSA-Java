@@ -2,7 +2,7 @@ package ArrayList;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//Monotonr program
 public class Monotone {
 
     public boolean  monotone(ArrayList<Integer> nums){
