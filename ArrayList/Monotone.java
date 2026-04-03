@@ -22,6 +22,7 @@ public class Monotone {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //Taking input
         System.out.println("Enter the ArrayList Elements size");
         int n = sc.nextInt();
 
