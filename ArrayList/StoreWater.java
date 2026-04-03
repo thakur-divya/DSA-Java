@@ -13,7 +13,7 @@ public class StoreWater {
             }else{
                 rp--;
             }
-        }
+        }//returning maxwater
         return maxWater;
     }
     public static void main(String[] args) {
