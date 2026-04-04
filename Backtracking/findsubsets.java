@@ -18,7 +18,7 @@ public class findsubsets {
             //if choice is no
             findsubs(str,ans,i+1);
         }
-    
+    //Main method
     public static void main(String[] args) {
         String str = "abc";
         findsubs(str,"",0);
