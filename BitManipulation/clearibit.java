@@ -6,6 +6,7 @@ public class clearibit {
         return n & bitmask;
     }
     public static void main(String[] args) {
+        //Clearing bit
         System.out.println(clearithbit(9,2));
     }
 }
