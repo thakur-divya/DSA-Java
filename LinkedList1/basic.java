@@ -37,20 +37,37 @@ public class basic {
         tail.next = newNode;
         tail = newNode;
     }
-    public void print(){
+    public void print(){ //O(n) time 
         if(head == null){
             System.out.println("LL is empty");
             return;
         }
         Node temp = head;
         while(temp != null){
-            System.out.print(temp.data + " ");
+            System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
-        System.out.println();
+        System.out.println("null");
     }
 
+    public void add(int idx,int data){ //add in middle of linked list
+        if(idx == 0){
+            addFirst(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        Node temp = head;
 
+        int i = 0;
+        while(i < idx-1){
+            temp = temp.next;
+            i++;
+        }
+
+        //i=idx-1 , temp->prev
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
     public static void main(String[] args) {
         basic ll = new basic();
         ll.print();
@@ -60,6 +77,7 @@ public class basic {
         ll.print();
         ll.addLast(3);
         ll.print();
+        ll.add(2, 9);
         ll.addLast(4);
         ll.print();
     }
