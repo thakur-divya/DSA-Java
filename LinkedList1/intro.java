@@ -43,11 +43,25 @@ public class intro{
         
     }
 
+    public void addMiddle(int index, int data){
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i = 0;
+        while(i < (index - 1)){
+            temp = temp.next;
+            i++;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
     public static void main(String[] args) {
         intro ll = new intro();
         ll.addFirst(3);
         ll.addFirst(2);
         ll.addFirst(1);
+        ll.print();
+        ll.addMiddle(2, 10);
         ll.print();
         ll.addLast(4);
         ll.addLast(5);
