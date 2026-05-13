@@ -63,6 +63,46 @@ public class intro{
         temp.next = newNode;
     }
 
+    public int removeFirst(){
+        if(size == 0){
+            System.out.println("Linked List is Empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+    }
+
+    public int removeLast(){
+        if(size == 0){
+            System.out.println("Linked List is Empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size == 1){
+            int val = tail.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        //prev : i = size - 2
+        Node prev = head;
+        for(int i = 0; i < (size - 2); i++){
+            prev = prev.next;
+        }
+        int val = tail.data;
+        prev.next = null;
+        tail = prev;
+        size--;
+        return val;
+    }
+
     public static void main(String[] args) {
         intro ll = new intro();
         ll.addFirst(3);
@@ -75,5 +115,9 @@ public class intro{
         ll.addLast(5);
         ll.print();
         System.out.println(ll.size);
+        ll.removeFirst();
+        ll.print();
+        ll.removeLast();
+        ll.print();
     }
 }
