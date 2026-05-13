@@ -103,6 +103,17 @@ public class intro{
         return val;
     }
 
+    public boolean iterative(int key){
+        Node temp = head;
+        while(temp != null){
+            if(key == temp.data){
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         intro ll = new intro();
         ll.addFirst(3);
@@ -119,5 +130,6 @@ public class intro{
         ll.print();
         ll.removeLast();
         ll.print();
+        System.out.println(ll.iterative(10));
     }
 }
