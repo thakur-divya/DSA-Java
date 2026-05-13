@@ -103,15 +103,35 @@ public class intro{
         return val;
     }
 
-    public boolean iterative(int key){
+    public int iterative(int key){
         Node temp = head;
+        int i = 0;
         while(temp != null){
             if(key == temp.data){
-                return true;
+                return i;
             }
             temp = temp.next;
+            i++;
         }
-        return false;
+        return -1;
+    }
+
+    public int helper(Node head, int key){  //Helper function for recursive Search
+        if(head == null){
+            return -1;
+        }
+        if(head.data == key){
+            return 0;
+        }
+        int idx = helper(head.next,key);
+        if(idx == -1){
+            return -1;
+        }
+
+        return idx+1;
+    }
+    public int recSearch(int key){ //Recursive Function
+        return helper(head,key);
     }
 
     public static void main(String[] args) {
@@ -131,5 +151,6 @@ public class intro{
         ll.removeLast();
         ll.print();
         System.out.println(ll.iterative(10));
+        System.out.println(ll.recSearch(3));
     }
 }
