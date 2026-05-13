@@ -34,7 +34,7 @@ public class intro{
         head = newNode; // Assign newNode as head
     }
 
-    public void addLast(int data){
+    public void addLast(int data){ //Add Node in Last of LL
         Node newNode = new Node(data);
         size++;
         if(head == null){
@@ -46,7 +46,7 @@ public class intro{
         
     }
 
-    public void addMiddle(int index, int data){
+    public void addMiddle(int index, int data){ //Add Node in the Middle of LL
         if(index == 0){
             addFirst(data);
             return;
@@ -63,7 +63,7 @@ public class intro{
         temp.next = newNode;
     }
 
-    public int removeFirst(){
+    public int removeFirst(){ //Remove First Node from LL
         if(size == 0){
             System.out.println("Linked List is Empty");
             return Integer.MIN_VALUE;
@@ -80,7 +80,7 @@ public class intro{
         return val;
     }
 
-    public int removeLast(){
+    public int removeLast(){ //Remove Last node from LL
         if(size == 0){
             System.out.println("Linked List is Empty");
             return Integer.MIN_VALUE;
@@ -103,7 +103,7 @@ public class intro{
         return val;
     }
 
-    public int iterative(int key){
+    public int iterative(int key){   //Iterative Searching Key element if not found return -1
         Node temp = head;
         int i = 0;
         while(temp != null){
@@ -130,10 +130,46 @@ public class intro{
 
         return idx+1;
     }
-    public int recSearch(int key){ //Recursive Function
+    public int recSearch(int key){ //Recursive Function search using helper function
         return helper(head,key);
     }
 
+    public void reverse(){  //Reverse a LL 1->2->3->null to 3->2->1->null using iterative approach O(n)
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
+    public void deletenthfromEnd(int n){  //Remove Nth Node from the End CLASSICAL Que. asked 
+        //Step 1 is to calculate size 
+        int sz = 0;
+        Node temp = head;
+        while(temp != null){
+            temp = temp.next;
+            sz++;
+        }
+
+        if(n == sz){ //Agar ek hi node ho head to base case
+            head = head.next;
+        }
+
+        Node prev = head;
+        int i = 1;
+        while(i < sz-n){
+            prev = prev.next;
+            i++;
+        }
+        prev.next = prev.next.next;
+        return;
+    }
     public static void main(String[] args) {
         intro ll = new intro();
         ll.addFirst(3);
@@ -152,5 +188,11 @@ public class intro{
         ll.print();
         System.out.println(ll.iterative(10));
         System.out.println(ll.recSearch(3));
+
+        ll.reverse();
+        ll.print();
+
+        ll.deletenthfromEnd(3);
+        ll.print();
     }
 }
