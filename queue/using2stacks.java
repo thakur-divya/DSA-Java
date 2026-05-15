@@ -1,5 +1,8 @@
 package queue;
 import java.util.*;
+//Queue using 2 stacks
+/*Two method is there in first add is O(n) and rest O(1)
+while in second remove pop is O(n) and rest is O(1) */
 public class using2stacks {
     static class Queue{
         static Stack<Integer> s1 = new Stack<>();
