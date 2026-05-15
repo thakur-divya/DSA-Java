@@ -1,5 +1,8 @@
 package queue;
 import java.util.*;
+
+//Learning Implementation of Queue using Arrays
+//Takes O(1) to add but O(n) to remove
 public class usingArrays {
     public static class Queue{
         static int arr[];
