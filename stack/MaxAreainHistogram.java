@@ -3,7 +3,7 @@ import java.util.*;
 
 //Its Hard Level Ques(88)  asked in Many top companies
 
-//Find the max. Area or Rectangle in Histogram
+//Find the max. Area or Rectangle in Histogram. Optimized solution takes O(n) time
 
 public class MaxAreainHistogram {
     public static void maximumarea(int[] arr){
