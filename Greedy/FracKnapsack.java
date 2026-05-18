@@ -18,13 +18,14 @@ public class FracKnapsack {
 
         int finalVal = 0;
         int capacity = W;
-        for(int i=ratio.length-1;i>=0;i--){
-            int idx = (int)ratio[i][0];
-            if(capacity >= weight[idx]){
+        for(int i=ratio.length-1;i>=0;i--){ //bcz ratio is in asc order we want higher ratio first
+            
+            int idx = (int)ratio[i][0]; //Storing Index
+            if(capacity >= weight[idx]){   // total include
                 capacity -= weight[idx];
                 finalVal += val[idx];
             }else{
-                finalVal += (ratio[i][1] * capacity);
+                finalVal += (ratio[i][1] * capacity); //include fractional part
                 capacity = 0;
                 break;
             }
