@@ -11,7 +11,7 @@ public class Height {
             this.right = null;
         }
     }
-    public static int height(Node root){
+    public static int height(Node root){ //O(N) calc height of tree
         if(root == null){
             return 0;
         }
@@ -20,7 +20,7 @@ public class Height {
         return Math.max(lh,rh) + 1;
     }
 
-    public static int count(Node root){
+    public static int count(Node root){  //O(N) Counting no of Nodes
         if(root == null){
             return 0;
         }
@@ -29,13 +29,26 @@ public class Height {
         return lc+rc+1;
     }
 
-    public static int sum(Node root){
+    public static int sum(Node root){  //O(N) Sum of Nodes
         if(root == null){
             return 0;
         }
         int ls = sum(root.left);
         int rs = sum(root.right);
         return ls+rs+root.data;
+    }
+
+    public static int diameter(Node root){  //O(N2) Calc Diameter of a tree
+        if(root == null){
+            return 0;
+        }
+        int leftdiam = diameter(root.left);
+        int leftht = height(root.left);
+        int rightdiam = diameter(root.right);
+        int rightht = height(root.right);
+        int selfDiam = leftht + rightht + 1;
+
+        return Math.max(selfDiam,Math.max(leftdiam,rightdiam));
     }
     public static void main(String[] args) {
         Node root = new Node(1);
@@ -48,6 +61,7 @@ public class Height {
 
         System.out.println("Height of tree is " + height(root));
         System.out.println("Count of Nodes is " + count(root));
-         System.out.println("Sum of Nodes is " + sum(root));
+        System.out.println("Sum of Nodes is " + sum(root));
+        System.out.println("Diameter of Tree is " + diameter(root));
     }
 }
