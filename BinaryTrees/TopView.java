@@ -1,6 +1,6 @@
 package BinaryTrees;
 import java.util.*;
-
+//Hard Level Question 
 public class TopView {
     static class Node{
         int data;
@@ -23,12 +23,12 @@ public class TopView {
     }
 
     public static void topview(Node root){
-        Queue<Info> q = new LinkedList<>();
-        HashMap<Integer,Node> map = new HashMap<>();
+        Queue<Info> q = new LinkedList<>(); //For levelOrder traversal in tree
+        HashMap<Integer,Node> map = new HashMap<>();  //Using map to store horizontal distance and node
         
         int min = 0 ,max = 0;
 
-        q.add(new Info(root,0));
+        q.add(new Info(root,0)); //HorzDistance of Root is 0
         q.add(null);
 
         while(!q.isEmpty()){
