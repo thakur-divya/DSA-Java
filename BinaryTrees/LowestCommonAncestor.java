@@ -135,6 +135,31 @@ public class LowestCommonAncestor {
         }
         return max+1;
     }
+
+    //Program to Transfer To SUM Tree
+    public static int transform(Node root){
+        if(root == null){
+            return 0;
+        }
+
+        int LeftChild = transform(root.left);
+        int RightChild = transform(root.right);
+
+        int newLeft = root.left == null ? 0 : root.left.data;
+        int newRight = root.right == null ? 0 : root.right.data;
+
+        int data = root.data;
+        root.data = newLeft + LeftChild + newRight + RightChild;
+        return data;
+    }
+    public static void preorder(Node root){
+        if(root == null){
+            return;
+        }
+        System.out.print(root.data + " ");
+        preorder(root.left);
+        preorder(root.right);
+    }
     public static void main(String[] args) {
         
         Node root = new Node(1);
@@ -155,6 +180,9 @@ public class LowestCommonAncestor {
 
         int k = 2;
         int n = 5;
-        kthancestor(root,n,k);
+        kthancestor(root,n,k); //Kth Ancestor from given node
+
+        transform(root);
+        preorder(root);
     }
 }
