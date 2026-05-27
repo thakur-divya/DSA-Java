@@ -1,7 +1,7 @@
 package DynamicProgramming;
 
 public class fib {
-    public static int fibonacci(int n,int f[]){
+    public static int fibonacci(int n,int f[]){  //Using Memoization(Top Down) O(N)
         if(n==0 || n==1){
             return n;
         }
@@ -12,7 +12,7 @@ public class fib {
         return f[n];
     }
 
-    public static int fibtabulation(int n){
+    public static int fibtabulation(int n){ //Using Tabulation(Bottom Up) O(N)
         int dp[] = new int[n+1];
         dp[0] = 0;
         dp[1] = 1;
