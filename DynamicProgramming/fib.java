@@ -13,6 +13,10 @@ public class fib {
     }
 
     public static int fibtabulation(int n){ //Using Tabulation(Bottom Up) O(N)
+        //base case
+        if (n == 0) {
+            return 0;
+        }
         int dp[] = new int[n+1];
         dp[0] = 0;
         dp[1] = 1;
