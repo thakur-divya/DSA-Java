@@ -25,7 +25,7 @@ public class Knapsack {
         }
         
     }
-    //Tabulation Mrthod
+    
     //i - no. of items & j - Knapsack size
     //initaially i[0]j[0] = 0
     //Start loop from 1 to n+1
