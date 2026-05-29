@@ -1,6 +1,7 @@
 package DynamicProgramming;
 public class Knapsack {
 
+    //Using Memoization O(n*W)
     public static int knap(int val[],int wt[],int W,int n,int dp[][]){
         
         if(W == 0 || n == 0){
@@ -24,6 +25,11 @@ public class Knapsack {
         }
         
     }
+    //Tabulation Mrthod
+    //i - no. of items & j - Knapsack size
+    //initaially i[0]j[0] = 0
+    //Start loop from 1 to n+1
+    //dp[n+1][W+1] from 0 to n+1
     public static void main(String[] args) {
     int val[] = {15,14,10,45,30};
     int wt[] = {2,5,1,3,4};
