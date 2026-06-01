@@ -1,5 +1,7 @@
 package DynamicProgramming;
 import java.util.*;
+
+//Time Comp is O(N*Sum)
 public class CoinChange {
     public static int coin(int coins[],int sum){
         int n = coins.length;
