@@ -1,5 +1,6 @@
 package DynamicProgramming;
 
+//Unique Initialization  O(n*m)
 public class EditDistance {
     public static int editdist(String str1,String str2){
         int n = str1.length();
@@ -22,10 +23,10 @@ public class EditDistance {
                 if(str1.charAt(i-1) == str2.charAt(j-1)){   //same
                     dp[i][j] = dp[i-1][j-1];
                 }else{                                      //diff
-                    int add = dp[i][j-1] + 1;
-                    int del = dp[i-1][j] + 1;
-                    int rep = dp[i-1][j-1] + 1;
-                    dp[i][j] = Math.min(Math.min(add,del),rep);
+                    int add = dp[i][j-1] + 1; //add
+                    int del = dp[i-1][j] + 1; //delete
+                    int rep = dp[i-1][j-1] + 1; //replace
+                    dp[i][j] = Math.min(Math.min(add,del),rep); //min. operation which can be performed
                 }
             }
         }
