@@ -26,7 +26,7 @@ public class LongCommonSubstring {
                 }
             }
         }
-        return dp[n][m];
+        return ans;
     }
     public static void main(String[] args) {
         String str1 = "ABCDE";
