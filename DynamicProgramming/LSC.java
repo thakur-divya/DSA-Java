@@ -1,5 +1,5 @@
 package DynamicProgramming;
-
+//Longest Common Subsequence
 public class LSC {
     public static int lcs(String str1,String str2,int n,int m){   //Using recursion
         if(n == 0 || m == 0){

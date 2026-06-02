@@ -1,5 +1,6 @@
 package DynamicProgramming;
 
+//O(n*m)
 public class LongCommonSubstring {
     public static int lcs(String str1 ,String str2){
         int n = str1.length();
