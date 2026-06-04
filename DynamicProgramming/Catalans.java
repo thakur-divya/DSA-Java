@@ -58,7 +58,7 @@ public class Catalans {
         return dp[n];
     }
 
-    public static int MountainRanges(int n){
+    public static int MountainRanges(int n){      //that can be formed using upstreak & downstreak
          int dp[] = new int[n+1];
 
         dp[0] = 1;
