@@ -35,5 +35,8 @@ public class Operations {
     //To know isEmpty
     hm.clear();  //HashMap ko clear kar diya
     System.out.println(hm.isEmpty());
+
+    //Iterate
+    
     }
 }
