@@ -2,6 +2,7 @@ package HashMap;
 
 import java.util.*;
 
+//Valid Anagram q in which 2 strings are containing same no of letters and same letter
 public class Anagram {   //O(N)
 
     public static boolean isAnagram(String s, String t){
