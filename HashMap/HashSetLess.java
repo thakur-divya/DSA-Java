@@ -21,5 +21,36 @@ public class HashSetLess {
         System.out.println(set.size());
         set.clear();
         System.out.println(set.isEmpty());
+
+        //Iterations on HashSets
+        //1. Using Iterator
+        HashSet<String> cities = new HashSet<>();
+        cities.add("India");
+        cities.add("Mumbai");
+        cities.add("Telangana");
+
+        Iterator it = cities.iterator();
+        while(it.hasNext()){
+            System.out.print(it.next() + " ");
+        }
+        System.out.println("");
+        //2. Using Advanced Loop
+        for (String city : cities){
+            System.out.print(city + " ");
+        }
+        System.out.println("");
+
+        //Using LinkedHashSet and TreeSet
+        LinkedHashSet<String> lhs = new LinkedHashSet<>();
+        lhs.add("India");
+        lhs.add("Mumbai");
+        lhs.add("Telangana");
+        System.out.println(lhs);
+
+        TreeSet<String> ts = new TreeSet<>();
+        ts.add("India");
+        ts.add("Mumbai");
+        ts.add("Telangana");
+        System.out.println(ts);
     }
 }
