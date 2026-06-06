@@ -1,7 +1,7 @@
 package HashMap;
 import java.util.*;
 
-//O(n+m)
+//O(n+m) Count no of unions and intersections using sets
 public class UnionIntersection {
     public static void main(String[] args) {
         int arr1[] = {7,3,9};
