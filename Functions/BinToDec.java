@@ -12,7 +12,15 @@ public class BinToDec {
         }
         System.out.println("The result is : " + dec);
     }
+    public static int binaryToDecimal(String b) {
+        int dec = 0;
+        for(int i=0;i<b.length();i++){
+            dec = dec * 2 + (b.charAt(i) - '0');
+        }
+        return dec;
+    }
     public static void main(String[] args) {
         bintodec(101101);
+        System.out.println(binaryToDecimal("1111"));
     }
 }
