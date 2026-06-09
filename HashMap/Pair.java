@@ -1,7 +1,7 @@
 package HashMap;
 import java.util.*;
 public class Pair {
-    public static int[] maxpair(int nums[]){
+    public static int maxpair(int nums[]){
         HashSet<Integer> set = new HashSet<>();
         int pairs = 0;
         for(int num : nums){
@@ -13,10 +13,11 @@ public class Pair {
             }
         }
 
-        return new int[]{pairs,set.size()};
+        return pairs;
     }
     public static void main(String[] args) {
         int nums[] = {1,2,3,3,2,1,2};
-        System.out.println(Arrays.toString(maxpair(nums)));
+        //System.out.println(Arrays.toString(maxpair(nums)));
+        System.out.println(maxpair(nums));
     }
 }
