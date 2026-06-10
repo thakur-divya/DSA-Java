@@ -1,10 +1,11 @@
 package DynamicProgramming;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
 public class Wordbreak {
-    public boolean wordBreak(String s, List<String> wordDict) {
+    public static boolean wordBreak(String s, List<String> wordDict) {
         HashSet<String> set = new HashSet<>(wordDict);
 
         boolean[] dp = new boolean[s.length() + 1];
@@ -24,6 +25,7 @@ public class Wordbreak {
     }
     public static void main(String[] args) {
         String s = "leetcode";
-        List wordDict = ["leet","code"];
+        List<String> wordDict = Arrays.asList("leet", "code");
+        System.out.println(wordBreak(s,wordDict));
     }
 }
