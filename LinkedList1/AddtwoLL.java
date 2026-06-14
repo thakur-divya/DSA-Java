@@ -1,7 +1,7 @@
 package LinkedList1;
 
 public class AddtwoLL {
-
+//classic Add Two Numbers linked-list problem.
     static class ListNode {
         int val;
         ListNode next;
