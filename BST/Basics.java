@@ -24,6 +24,7 @@ public class Basics {
             return root;
         }
 
+        //inorder traversal of BST gives a sorted sequence 
         public static void inorder(Node root){
             if(root == null){
                 return;
@@ -33,6 +34,20 @@ public class Basics {
             inorder(root.right);
         }
 
+        //Search in BST takes O(H) time complexity
+        public static boolean search(Node root,int key){
+            if(root == null){
+                return false;
+            }
+            if(root.data == key){
+                return true;
+            }
+            if(root.data > key){
+                return search(root.left,key);
+            }else{
+                return search(root.right, key);
+            }
+        }
         public static void main(String[] args) {
             int values[] = {5,1,3,4,2,7};
             Node root = null;
@@ -42,6 +57,12 @@ public class Basics {
 
             inorder(root);
             System.out.println();
+
+            if(search(root, 6)){
+                System.out.println("Found");
+            }else{
+                System.out.println("Not Found");
+            }
         }
 }
 
