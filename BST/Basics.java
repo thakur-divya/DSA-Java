@@ -88,6 +88,18 @@ public class Basics {
             }
             return root;
         }
+
+        //Print in Range
+        public static void PrintInRange(Node root,int k1,int k2){
+            if(root == null){
+                return;
+            }
+            else if(root.data < k1){
+                PrintInRange(root.left, k1, k2);
+            }else{
+                PrintInRange(root.right, k1, k2);
+            }
+        }
         public static void main(String[] args) {
             int values[] = {5,1,3,4,2,7};
             Node root = null;
@@ -107,6 +119,9 @@ public class Basics {
             root = delete(root,1);
             System.out.println("");
             inorder(root);
+
+
+            PrintInRange(root, 2, 8);
         }
 }
 
