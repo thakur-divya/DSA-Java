@@ -1,5 +1,7 @@
 package BST;
 import java.util.*;
+
+//Convert Binary Search tree to Balanced Bst
 public class BSTtoBalanced{
     static class Node{
         int data;
