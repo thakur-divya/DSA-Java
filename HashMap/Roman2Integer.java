@@ -2,7 +2,7 @@ package HashMap;
 import java.util.*;
 
 public class Roman2Integer{
-    public int romanToInt(String s) {
+    public static int romanToInt(String s) {
         
         HashMap<Character, Integer> map = new HashMap<>();
 
@@ -27,5 +27,9 @@ public class Roman2Integer{
         }
 
         return result;
+    }
+    public static void main(String args[]){
+    String s = "III";
+    System.out.println(romanToInt(s));
     }
 }
