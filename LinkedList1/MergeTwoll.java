@@ -24,5 +24,8 @@ public class MergeTwoll{
 
         return dummy.next;
     
-}
+    }
+    public static void main(String[] args) {
+        ListNode 
+    }
 }
