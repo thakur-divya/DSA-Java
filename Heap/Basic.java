@@ -1,6 +1,10 @@
 package Heap;
 import java.util.*;
 public class Basic{
+
+    //Program for MinHeap
+
+    //To make it for maxHeap do only 3 changes in comparision
     static class Heap{
         ArrayList<Integer> arr = new ArrayList<>();
 
@@ -11,7 +15,7 @@ public class Basic{
             int x = arr.size() - 1; //x  is child idx
             int par = (x-1)/2;  //par is parent idx
 
-            while(arr.get(x) < arr.get(par)){   //O(log n)
+            while(arr.get(x) < arr.get(par)){   //O(log n)  //arr.get(x) > arr.get(par)
                 //Swap
                 int temp = arr.get(x);
                 arr.set(x,arr.get(par));
@@ -31,11 +35,11 @@ public class Basic{
             int left = 2*i+1;
             int right = 2*i+2;
 
-            if(left < arr.size() && arr.get(minIdx) > arr.get(left)){
+            if(left < arr.size() && arr.get(minIdx) > arr.get(left)){  //arr.get(minIdx) < arr.get(left)
                 minIdx = left;
             }
 
-            if(right < arr.size() && arr.get(minIdx) > arr.get(right)){
+            if(right < arr.size() && arr.get(minIdx) > arr.get(right)){  //arr.get(minIdx) < arr.get(right)
                 minIdx = right;
             }
 
