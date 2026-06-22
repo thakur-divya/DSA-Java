@@ -31,7 +31,7 @@ public class Basic{
             int left = 2*i+1;
             int right = 2*i+2;
 
-            if(left < arr.size() && arr.get(minIdx) > arr.get(i)){
+            if(left < arr.size() && arr.get(minIdx) > arr.get(left)){
                 minIdx = left;
             }
 
@@ -78,6 +78,9 @@ public class Basic{
         h.add(10);
         h.add(6);
 
-        
+        while(!h.isEmpty()){
+            System.out.print(h.peek() + " ");
+            h.remove();
+        }
     }
 }
