@@ -2,7 +2,7 @@ package HashMap;
 import java.util.*;
 
 public class freq{
-    public static HashMap<Character,Integer> frequency(String str){
+    public static void frequency(String str){
         LinkedHashMap<Character,Integer> map = new LinkedHashMap<>();
 
         for (char ch : str.toCharArray()){
@@ -12,10 +12,24 @@ public class freq{
                 map.put(ch,1);
             }
         }
-       return map;
+
+        System.out.print("{");
+
+        int count = 0;
+        Set<Character> ch = map.keySet();
+        for (char c : ch){
+            System.out.print("'" + c + "'" + ":" + map.get(c));
+            count++;
+            if(count < map.size()){
+                System.out.print(",");
+            }
+        }
+        System.out.print("}");
+
+       
     }
     public static void main(String args[]){
         String str = "Programming";
-        System.out.println(frequency(str));
+        frequency(str);
     }
 }
