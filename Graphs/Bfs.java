@@ -1,6 +1,7 @@
 package Graphs;
 import java.util.*;
 public class Bfs {
+//Go to immediate Neighbours First
  public static class Edge{
     int src;
     int dest;
