@@ -42,6 +42,8 @@ public class Bfs {
         graph[6].add(new Edge(6,5,1));
     }   
 
+    //Time Complexity O(V+E) jisme V aur E me se jo jyda hoga wo dominate krega using Adjacency List
+    //Time Complexity O(V^2) if made using Adjacency Matrix
     public static void bfs(ArrayList<Edge>[] graph){
         Queue<Integer> q = new LinkedList<>();
         boolean vis[] = new boolean[graph.length];
