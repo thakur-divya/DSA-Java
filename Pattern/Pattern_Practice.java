@@ -60,8 +60,25 @@ public class Pattern_Practice {
             System.out.println();
         }
 
-        
+        System.out.println("6th Pattern Inverted Half Pyramid with Numbers");
+        for(int i=1;i<=5;i++){
+            int k=1;
+            for(int j=5-i+1;j>0;j--){
+                System.out.print(k);
+                k++;
+            }
+            System.out.println();
+        }
 
+        System.out.println("7th Pattern Floydd's Triangle");
+        int m=1;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(m + " ");
+                m++;
+            }
+            System.out.println();
+        }
     }
 
 }
