@@ -83,7 +83,7 @@ public class Pattern_Practice {
         System.out.println("8th Pattern 0-1 Traingle");
         for(int i=1;i<=5;i++){
             for(int j=1;j<=i;j++){
-                if(i%2 != 0){
+                if(i%2 != 0){  // Also can use if(i+j % 2 == 0) SOP("1") else SOP("0")
                     if(j%2!=0){
                         System.out.print("1");
                     }else{
@@ -96,6 +96,38 @@ public class Pattern_Practice {
                         System.out.print("0");
                     }
                 }
+            }
+            System.out.println();
+        }
+
+        System.out.println("8th Pattern");
+        int num = 4;
+        //1st halves
+        for(int i=1;i<=num;i++){
+            //Stars - i
+            for(int j=1;j<i;j++){
+                System.out.print("*");
+            }
+            //Spaces - 2*(n-i)
+            for(int j=1;j<=2*(num-i);j++){
+                System.out.print(" ");
+            }
+            //Stars - i
+            for(int j=1;j<i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        //2nd halves
+        for(int i=num;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            for(int j=1;j<=2*(num-i);j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
             }
             System.out.println();
         }
