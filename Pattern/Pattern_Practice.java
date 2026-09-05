@@ -1,0 +1,27 @@
+public class Pattern_Practice {
+    public static void main(String args[]){
+        System.out.println("1st Pattern");
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("2nd Pattern");
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4-i+1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println("3rd pattern");
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+}
