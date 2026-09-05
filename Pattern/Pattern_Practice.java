@@ -1,4 +1,6 @@
 public class Pattern_Practice {
+
+
     public static void main(String args[]){
         System.out.println("1st Pattern");
         for(int i=1;i<=4;i++){
@@ -45,6 +47,21 @@ public class Pattern_Practice {
             }
             System.out.println();
         }
+
+
+        System.out.println("6th Pattern Inverted and Rotated Half Pyramid");
+        for(int i=1;i<=4;i++){
+            for(int k=4-i;k>0;k--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        
+
     }
 
 }
