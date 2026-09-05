@@ -159,6 +159,27 @@ public class Pattern_Practice {
             }
             System.out.println();
         }
+
+
+        System.out.println("11th Pattern Diamond Pattern");
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i+(i-1);j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=4;i>=1;i--){
+            for(int j=1;j<=4-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i+(i-1);j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 
 }
