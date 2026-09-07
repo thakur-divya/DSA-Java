@@ -1,7 +1,7 @@
 import java.util.*;
 public class divisor {
-    public static int[] divisors(int n) {
-        int arr[] = new int[n];
+    public static List<Integer> divisors(int n) {
+        /*int arr[] = new int[n];
         int idx = 0;
         for(int i=1;i<=n;i++){
             if(n%i == 0){
@@ -9,15 +9,21 @@ public class divisor {
                 idx++;
             }
         }
-
         int result[] = new int[idx];
         for(int i=0;i<idx;i++){
             result[i] = arr[i];
         }
-        return result;
+        return result;*/
+        List<Integer> list = new ArrayList<>();
+        for(int i=1;i<=n;i++){
+            if(n%i == 0){
+                list.add(i);
+            }
+        }
+        return list;
     }
     public static void main(String[] args) {
-        int n = 12;
-        System.out.println(Arrays.toString(divisors(n)));
+        int n = 9;
+        System.out.println((divisors(n)));
     }
 }
