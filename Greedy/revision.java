@@ -23,6 +23,8 @@ class revision{
         for(int i=0;i<ans.size();i++){
             System.out.print("A" + ans.get(i) + " ");
         }
+
+        System.out.println();
         return count;
 
     }
